@@ -99,6 +99,77 @@ const javascriptFlashCardsQuestions = [
       "What will print to the console? var num1 = 1; var num2 = 2; var str2 = '2'; var matchIt = function(){if (num1 == true){console.log('These are equal values');}} matchIt();",
     answers: "These are equal values.",
   },
+  {
+    question:
+      "What will this line of code return? const lastName = 'Lovelace;' const lastLetterOfLastName = lastName[lastName.length-1];",
+    answers: "The last character of Lovelace, 'e'",
+  },
+  {
+    question:
+      "Can we change the value of an array's index with the following code? const myArray = [18, 64, 99];  myArray[0] = 45;",
+    answers:
+      "Yes the [0] index of myArray will change from 18 to 45. myArray will now equal [45, 64, 99]",
+  },
+  {
+    question:
+      "What is the value of " +
+      `const arr =
+    [
+      [1, 2, 3],
+      [4, 5, 6],
+      [7, 8, 9],
+      [[10, 11, 12], 13, 14]
+    ]
+    const subarray = arr[3];`,
+    answers: "[[10, 11, 12], 13, 14]",
+  },
+  {
+    question:
+      "What is the value of " +
+      `const arr =
+    [
+      [1, 2, 3],
+      [4, 5, 6],
+      [7, 8, 9],
+      [[10, 11, 12], 13, 14]
+    ]
+    const nestedSubarray = arr[3][0];`,
+    answers: "[10, 11, 12]",
+  },
+  {
+    question:
+      "What is the value of " +
+      `const arr =
+    [
+      [1, 2, 3],
+      [4, 5, 6],
+      [7, 8, 9],
+      [[10, 11, 12], 13, 14]
+    ]
+    const element = arr[3][0][1];`,
+    answers: "11",
+  },
+  {
+    question:
+      "Using bracket notation select an element from myArray so myData is equal to 8." +
+      `const myArray = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9],
+        [[10, 11, 12], 13, 14],
+      ];`,
+    answers: "const myData = myArray[2][1];",
+  },
+  {
+    question:
+      "We have an array, myArray = [Dog, Cat, Bird]. What function can we use to add 'Fish' to the end of the array? How would we type that out?",
+    answers: "myArray.push('Fish')",
+  },
+  {
+    question:
+      "We have an array, myArray = [Mom, Dad, Grandpa, Grandma, Neighbor]. What function can we use to remove the last index 'Neighbor' from the array? How would we type that out?",
+    answers: "myArray.pop()",
+  },
 ];
 
 console.log(javascriptFlashCardsQuestions[1].question);
